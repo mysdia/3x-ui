@@ -106,7 +106,7 @@ func InitDB(dbPath string) error {
 	if err != nil {
 		return err
 	}
-	_, err = sqlDB.Exec("PRAGMA foreign_keys = ON;")
+	_, err = sqlDB.Exec("PRAGMA foreign_keys = OFF;")
 	if err != nil {
 		return err
 	}
